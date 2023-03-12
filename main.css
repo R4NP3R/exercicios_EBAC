@@ -1,67 +1,95 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
+    font-family: 'Yantramanav', sans-serif;
 }
 
-body{
-    background-color: rgb(136, 136, 136);
-}
-
-.container{
-    max-width: 620px;
-    margin: 0 auto;
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 header h1{
-    padding: 16px 0;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+
+header img {
+    margin-top: 10px;
+    height: 60px;
+    width: 60px;
+}
+
+body {
+    background-color: gainsboro;
+}
+.container {
+    width: 720px;
+    max-width: 100%;
     margin: 0 auto;
+    background-color: rgb(197, 197, 197);
 }
 
-form{
+form {
     display: flex;
+    width: 540px;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
-input, button{
-    height: 30px;
-    color:white;
-    padding: 8px;
-}
-
-input{
-    border-radius: 0;
-    border: none;
-    background-color: rgb(233, 233, 233);
-    border-bottom: 1px solid black;
-    width: 250px;
-    
-}
-
-ul {
+table {
+    width: 100%;
     text-align: center;
-    display: flex;
-    flex-direction: column-reverse;
-}
-button {
-    background-color: rgb(185, 255, 79);
-    border: none;
-    margin-left: 8px;
 }
 
-#tasks{
-    margin-top: 8px;
-    padding-bottom: 1px;
+thead th {
+    padding-bottom: 10px;
     border-bottom: 1px solid black;
-    cursor: pointer;
-    list-style: circle;
+    font-size: 20px;
+}
+
+tfoot th {
+    border-top: 1px solid black;
+    padding:10px 0px 10px 0px;
+    font-size: 20px;
+}
+
+
+
+table td {
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 8px 0px 8px 0px;
+    border-bottom: 1px solid rgba(29, 29, 29, 0.164);
+    text-transform: uppercase;
+
+}
+
+input, button {
+    height: 30px;
+    padding: 8px;
+    border: 4px;
+}
+
+input {
+    background-color: white;
+    width: 170px;
     
 }
 
-.task-complete .tasks{
-    text-decoration: line-through;
-    border-bottom: none;
+input {
+    background-color: white;
+    width: 170px;    
+    
+}
+
+button {
+    background-color: rgb(116, 172, 31);
+    color: white;
+    cursor: pointer;
 }
