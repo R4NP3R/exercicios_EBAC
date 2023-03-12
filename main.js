@@ -1,21 +1,20 @@
-const form = document.getElementById('form-maior')
-
-form.addEventListener('submit', function(e){
+$(document).ready(function(){
+$('body').on('click','#tasks',function(){
+    $('p').css({"text-decoration" : "line-through","border-bottom" : "none"});
+});
+$('form').on('submit', function(e){
     e.preventDefault();
-    let numeroA = document.getElementById('numeroA')
-    let numeroB = document.getElementById('numeroB')
-    let numeroMaior = parseFloat(numeroA.value) < parseFloat(numeroB.value);
-
-        if (numeroMaior){
-            document.querySelector('.number-error').style.display = 'none'
-            document.querySelector('.number-sucess').style.display = 'flex'            
-        } else {
-            document.querySelector('.number-sucess').style.display = 'none'
-            document.querySelector('.number-error').style.display = 'flex'
-        }
+    
+    
+    const novaTarefa = $('ul');
+    const listaDeTarefas = $('#form-atividade').val();
+    const linhaTarefas = $('<li></li>').appendTo(novaTarefa);    
+    
+    $(linhaTarefas).html(`<p id="tasks">${listaDeTarefas}</p>`)
+    
+    $('#listaDeTarefas').val(''); 
 })
 
-
-
+})
 
 

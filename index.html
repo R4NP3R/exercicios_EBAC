@@ -5,21 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Exercicio JS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Lista de tarefas</title>
 </head>
 <body>
-    
     <div class="container">
-        <h1>Número maior</h1>
-        <form id="form-maior">
-        <input type="number" placeholder="campo A" id="numeroA" required>
-        <input type="number" placeholder="campo B" id="numeroB" required>
-        <button id=confirm-button type="submit">VER</button>
-        <p class="number-error">O numero A é Maior que o Número B</p>
-        <p class="number-sucess">O numero A é menor que o Número B</p>
+        <header>
+            <h1>Lista de tarefas</h1>
+        </header>
+        <form>
+            <input id="form-atividade" type="text" placeholder="Insira a tarefa">
+            <button type="submit">Inserir</button>
         </form>
+        <ul id="listaDeTarefas">
+        
+        </ul>
     </div>
-    <script src="./main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="main.js"></script>
     
 </body>
 </html>

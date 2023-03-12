@@ -1,36 +1,67 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Roboto, sans-serif;
 }
 
-.container {
-    width: 400px;
+body{
+    background-color: rgb(136, 136, 136);
+}
+
+.container{
+    max-width: 620px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1{
+    padding: 16px 0;
     margin: 0 auto;
 }
 
-input, button {
+form{
+    display: flex;
+}
+
+input, button{
     height: 30px;
-}
-h1 {
-    width: 200px;
-    margin: 0 auto;
-    font-size: 24px;
+    color:white;
+    padding: 8px;
 }
 
-.number-error{
-    display: none;
-    justify-content: center;
-    background-color: red;
-    margin: 10px 0;
-    padding: 6px;
-    color: white;
+input{
+    border-radius: 0;
+    border: none;
+    background-color: rgb(233, 233, 233);
+    border-bottom: 1px solid black;
+    width: 250px;
+    
 }
 
-.number-sucess{
-    display: none;
-    justify-content: center;
-    background-color: greenyellow;
-    margin: 10px 0;
-    padding: 6px;
+ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+button {
+    background-color: rgb(185, 255, 79);
+    border: none;
+    margin-left: 8px;
+}
+
+#tasks{
+    margin-top: 8px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    list-style: circle;
+    
+}
+
+.task-complete .tasks{
+    text-decoration: line-through;
+    border-bottom: none;
 }
